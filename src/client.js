@@ -23,7 +23,7 @@ class Client {
                     let item = chart[openTime];
                     openTime = parseInt(openTime);
                     let closeTime = openTime + timeDiff - 1;
-                    let quoteAssetVolume = parseFloat(item.volume) / ((parseFloat(item.open) + parseFloat(item.close)) / 2);
+                    let quoteAssetVolume = parseFloat(item.volume) * ((parseFloat(item.open) + parseFloat(item.close)) / 2);
                     const frame = [
                         openTime,
                         item.open,
@@ -33,10 +33,10 @@ class Client {
                         item.volume,
                         closeTime,
                         quoteAssetVolume.toString(),
-                        100,
-                        (quoteAssetVolume / 2).toString(),
-                        (quoteAssetVolume / 2).toString(),
-                        "1.1"];
+                        0,
+                        (0).toString(),
+                        (0).toString(),
+                        "0"];
                     newFrames.push(frame);
                 }
                 this.klines[symbol + interval] = newFrames;

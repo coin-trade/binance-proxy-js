@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "compression": "^1.7.4",
+    "compression": "^1.8.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.1",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3",
     "lodash": "^4.17.21",
-    "node-binance-api": "^0.12.5",
-    "node-fetch": "^2.6.1"
+    "node-binance-api": "^0.13.5",
+    "node-fetch": "^3.3.2"
   }
 }
